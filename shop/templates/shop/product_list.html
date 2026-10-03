@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Shop - Product List{% endblock %}
+
+{% block content %}
+<section style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+    <h1 style="margin-bottom: 0.75rem; color: var(--primary);">My first Product List</h1>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">this is my first product List.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; background: rgba(255, 255, 255, 0.02);">
+            <h3 style="margin-bottom: 0.5rem;">Sample Product A</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">High quality item ready in store.</p>
+            <span style="color: var(--accent); font-weight: 700; font-size: 1.1rem;">$19.99</span>
+        </div>
+        <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; background: rgba(255, 255, 255, 0.02);">
+            <h3 style="margin-bottom: 0.5rem;">Sample Product B</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Another great item in stock.</p>
+            <span style="color: var(--accent); font-weight: 700; font-size: 1.1rem;">$29.99</span>
+        </div>
+    </div>
+</section>
+{% endblock %}
